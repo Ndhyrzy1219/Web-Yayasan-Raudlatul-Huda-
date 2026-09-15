@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yayasan Raudlatul Huda Cimerak</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+  <style>
+    .unit-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px 15px;
+      text-align: center;
+      margin-bottom: 25px;
+      position: relative;
+      height: 100%;
+    }
+
+    /* header garis + lingkaran */
+    .unit-header {
+      position: relative;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .unit-header::before {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: -5%;
+      width: 110%;
+      height: 5px;
+      border-radius: 5px;
+      background: currentColor;
+      transform: translateY(-50%);
+      z-index: 0;
+      opacity: 0.6;
+    }
+
+    /* lingkaran icon */
+    .unit-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -60%);
+      z-index: 1;
+    }
+
+    /* warna-warna */
+    .blue {
+      color: #5dade2;
+    }
+
+    .green {
+      color: #58d68d;
+    }
+
+    .yellow {
+      color: #f4d03f;
+    }
+
+    .orange {
+      color: #e67e22;
+    }
+
+    .purple {
+      color: #af7ac5;
+    }
+
+    .bg-blue {
+      background: #5dade2;
+    }
+
+    .bg-green {
+      background: #58d68d;
+    }
+
+    .bg-yellow {
+      background: #f4d03f;
+    }
+
+    .bg-orange {
+      background: #e67e22;
+    }
+
+    .bg-purple {
+      background: #af7ac5;
+    }
+
+    .unit-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #28a745;
+      /* judul hijau */
+    }
+  </style>
+  
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="gambar/logo yayasan.png" width="50" height="40" alt=""> 
+      YAYASAN RAUDLATUL HUDA CIMERAK
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+
+        <!-- Dropdown Profil -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Profil
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+            <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+            <li><a class="dropdown-item" href="visimisi.html">Visi Misi</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="fasilitas.html">Fasilitas</a></li>
+
+        <!-- Dropdown Info Pendaftaran -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Info Pendaftaran
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+            <li><a class="dropdown-item" href="syarat.html">Syarat</a></li>
+            <li><a class="dropdown-item" href="jadwal.html">Jadwal & Alur</a></li>
+            <li><a class="dropdown-item" href="biaya.html">Biaya & Fasilitas</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown unit pendidikan -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  active" href="#" id="unitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Unit Pendidikan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="unitDropdown">
+            <li><a class="dropdown-item" href="daftar.html">Daftar Unit</a></li>
+            <li><a class="dropdown-item" href="program.html">Program</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Isi -->
+ <div class="container my-5">
+    <h3 class="text-center mb-4">Daftar Unit</h3>
+    <p>Selamat datang di halaman informasi Pendaftaran Yayasan Raudlatul Huda. Silahkan pilih jenjang pendidikan yang
+      tersedia untuk melihat detail persyaratan, jadwal, dan alur pendaftaran
+    </p>
+
+    <!-- TAAM -->
+    <div class="row g-4 justify-content-center">
+      <!-- TAAM -->
+      <div class="col-6 col-md-4 col-lg">
+        <div class="unit-card">
+          <div class="unit-header blue">
+            <span class="unit-icon bg-blue">
+              <img src="gambar/icons8-mosque-100.png" alt="" width="50">
+            </span>
+          </div>
+          <h5 class="unit-title">TAAM</h5>
+          <p>Pendidikan dini usia 2–4 tahun dengan pembiasaan adab dan stimulasi islami.</p>
+
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+          <p class="mb-0 text-center">
+            <i class="bi bi-telephone-fill me-2" style="color:black;"></i>
+            <a href="https://wa.me/628133333333" class="text-decoration-none" style="color:black;">
+              0811-1111-111
+            </a>
+          </p>
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+        </div>
+      </div>
+
+      <!-- TKA -->
+      <div class="col-6 col-md-4 col-lg">
+        <div class="unit-card">
+          <div class="unit-header green">
+            <span class="unit-icon bg-green">
+              <img src="gambar/icons8-mosque-100.png" alt="" width="50">
+            </span>
+          </div>
+          <h5 class="unit-title">TKA</h5>
+          <p>Pendidikan anak usia 4–6 tahun untuk persiapan masuk sekolah dasar.</p>
+
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+          <p class="mb-0 text-center">
+            <i class="bi bi-telephone-fill me-2" style="color:black;"></i>
+            <a href="https://wa.me/628133333333" class="text-decoration-none" style="color:black;">
+              0812-2222-222
+            </a>
+          </p>
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+        </div>
+      </div>
+
+      <!-- TPA -->
+      <div class="col-6 col-md-4 col-lg">
+        <div class="unit-card">
+          <div class="unit-header yellow">
+            <span class="unit-icon bg-yellow">
+              <img src="gambar/icons8-mosque-100.png" alt="" width="50">
+            </span>
+          </div>
+          <h5 class="unit-title">TPA</h5>
+          <p>Pendidikan Al-Qur’an untuk anak usia dini dengan metode iqro dan tilawah.</p>
+
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+          <p class="mb-0 text-center">
+            <i class="bi bi-telephone-fill me-2" style="color:black;"></i>
+            <a href="https://wa.me/628133333333" class="text-decoration-none" style="color:black;">
+              0813-3333-333
+            </a>
+          </p>
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+        </div>
+      </div>
+
+      <!-- TQA -->
+      <div class="col-6 col-md-4 col-lg">
+        <div class="unit-card">
+          <div class="unit-header orange">
+            <span class="unit-icon bg-orange">
+              <img src="gambar/icons8-mosque-100.png" alt="" width="50">
+            </span>
+          </div>
+          <h5 class="unit-title">TQA</h5>
+          <p>Pendidikan Al-Qur’an lanjutan untuk remaja dengan pembelajaran tajwid dan tahfidz.</p>
+
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+          <p class="mb-0 text-center">
+            <i class="bi bi-telephone-fill me-2" style="color:black;"></i>
+            <a href="gambar/icons8-mosque-100.png" class="text-decoration-none" style="color:black;">
+              0814-4444-444
+            </a>
+          </p>
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+        </div>
+      </div>
+
+      <!-- DTA -->
+      <div class="col-6 col-md-4 col-lg">
+        <div class="unit-card">
+          <div class="unit-header purple">
+            <span class="unit-icon bg-purple">
+              <img src="gambar/icons8-mosque-100.png" alt="" width="50">
+            </span>
+          </div>
+          <h5 class="unit-title">DTA</h5>
+          <p>Pendidikan Al-Qur’an formal untuk anak usia sekolah dasar.</p>
+
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+          <p class="mb-0 text-center">
+            <i class="bi bi-telephone-fill me-2" style="color:black;"></i>
+            <a href="gambar/icons8-mosque-100.png" class="text-decoration-none" style="color:black;">
+              0814-4444-444
+            </a>
+          </p>
+          <hr style="border:0; border-top:2px solid #000; width:100%; margin:15px 0;">
+        </div>
+      </div>
+
+      
+    </div>
+
+  </div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-success text-white pt-4 ">
+  <div class="container">
+    <div class="row text-white align-items-start">
+
+      <!-- Kontak -->
+      <div class="col-md-4 text-start mb-3">
+        <h5>Kontak</h5>
+        <p>
+          <i class="bi bi-telephone-fill me-2"></i>08**********<br>
+          <i class="bi bi-envelope-fill me-2"></i>yayaysan@gmail.com
+        </p>
+      </div>
+
+      <!-- Lokasi -->
+      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center mb-3">
+        <h5>Lokasi Kami</h5>
+        <p class="text-center m-0">
+          <i class="bi bi-geo-alt-fill me-2"></i>
+          Jl. KH. Tubagus Abdullah, Kp. Cimerak RT.01 RW.03 Kel. Sukasaih, Kec. Purbaratu
+        </p>
+      </div>
+
+      <!-- Peta -->
+      <div class="col-md-4 mb-3">
+        <div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2712730987078!2d108.24155287357223!3d-7.323396372015241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f590051ceab19%3A0x13861899d9512b10!2sYayasan%20Raudlatul%20Huda%20Cimerak!5e0!3m2!1sid!2sid!4v1754313823325!5m2!1sid!2sid"
+            width="100%" height="150" 
+            style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center py-2">
+      <small>© 2025 Yayasan Raudlatul Huda Cimerak</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
